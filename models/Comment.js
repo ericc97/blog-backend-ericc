@@ -7,10 +7,11 @@ Comment.init(
   {
     id: {
       type: DataTypes.INTEGER,
+      allowNull:false,
       primaryKey: true,
       autoIncrement: true,
     },
-    Comment_text: {
+    comment_text: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
